@@ -1,0 +1,50 @@
+/* Start Main Rules */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Cairo', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --main-color: #28a5f6;
+  --alt-color: #168be5;
+  --section-background: #ececec;
+  --section-padding: 100px;
+  --transition-duration: 0.3s;
+}
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Main Rules */
