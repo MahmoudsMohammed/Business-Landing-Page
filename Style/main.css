@@ -47,6 +47,71 @@ a {
     width: 1170px;
   }
 }
+/* Components */
+.main-header {
+  padding: 15px;
+  width: fit-content;
+  margin: 0px auto 50px;
+  border: 2px solid black;
+  position: relative;
+}
+.main-header:hover {
+  color: white;
+  border-color: white;
+  transition-delay: 0.5s;
+}
+.main-header::after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  top: 50%;
+  transform: translateY(-50%);
+  left: -30px;
+  z-index: -1;
+}
+.main-header:hover::after {
+  animation: left-fill 0.5s linear forwards;
+}
+.main-header::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  top: 50%;
+  transform: translateY(-50%);
+  right: -30px;
+  z-index: -1;
+}
+.main-header:hover::before {
+  animation: right-fill 0.5s linear forwards;
+}
+@keyframes right-fill {
+  50% {
+    right: 0px;
+  }
+  100% {
+    right: 0px;
+    border-radius: 0px;
+    width: 100%;
+    height: 100%;
+  }
+}
+@keyframes left-fill {
+  50% {
+    left: 0px;
+  }
+  100% {
+    left: 0px;
+    border-radius: 0px;
+    width: 100%;
+    height: 100%;
+  }
+}
 /* End Main Rules */
 
 /* Start Header */
@@ -260,7 +325,7 @@ header .container .links li:last-of-type:hover .mega-menu {
 .landing .container .image {
   position: relative;
   width: 600px;
-  animation: image-up 5s infinite ease-in-out;
+  animation: image-up 5s infinite linear;
   animation-fill-mode: backwards;
 }
 @media (max-width: 991px) {
