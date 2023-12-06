@@ -58,7 +58,7 @@ a {
 .main-header:hover {
   color: white;
   border-color: white;
-  transition-delay: 0.5s;
+  transition-delay: 0.7s;
 }
 .main-header::after {
   content: '';
@@ -73,7 +73,7 @@ a {
   z-index: -1;
 }
 .main-header:hover::after {
-  animation: left-fill 0.5s linear forwards;
+  animation: left-fill 0.7s linear forwards;
 }
 .main-header::before {
   content: '';
@@ -88,7 +88,7 @@ a {
   z-index: -1;
 }
 .main-header:hover::before {
-  animation: right-fill 0.5s linear forwards;
+  animation: right-fill 0.7s linear forwards;
 }
 @keyframes right-fill {
   50% {
