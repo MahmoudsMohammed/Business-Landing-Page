@@ -4,6 +4,7 @@
 }
 body {
   font-family: 'Cairo', sans-serif;
+  counter-reset: more;
 }
 html {
   scroll-behavior: smooth;
@@ -755,3 +756,89 @@ header .container .links li:last-of-type:hover .mega-menu {
   color: var(--p-color);
 }
 /* End Team */
+
+/* Start services */
+.services {
+  padding: var(--section-padding) 0px;
+  background-color: var(--section-background);
+}
+.services .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+.services .container .box {
+  position: relative;
+  background-color: white;
+  color: #d5d5d5;
+  box-shadow: 3px 3px 7px #999999;
+  transition: var(--transition-duration);
+}
+.services .container .box:hover {
+  transform: translateY(-10px);
+}
+.services .container .box::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  top: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--main-color);
+  transition: var(--transition-duration);
+}
+.services .container .box:hover::after {
+  width: 100%;
+}
+.services .container .box .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services .container .box .content i {
+  margin: 50px 0px 20px;
+}
+.services .container .box .content span {
+  color: var(--main-color);
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.services .container .box .more {
+  padding: 20px;
+  text-align: right;
+  background-color: #f9f9f9;
+  position: relative;
+}
+.services .container .box .more::after {
+  counter-increment: more;
+  content: '0' counter(more);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100px;
+  color: white;
+  font-size: 1.7rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+}
+.services .container .box .more::before {
+  content: '';
+  position: absolute;
+  height: calc(100% + 0.5px);
+  width: 50px;
+  top: 0px;
+  left: 80px;
+  transform: skewX(-30deg);
+  background-color: #d5d5d5;
+  z-index: 1;
+}
+.services .container .box .more a {
+  color: var(--main-color);
+}
+/* End services */
