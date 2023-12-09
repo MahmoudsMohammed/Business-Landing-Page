@@ -202,7 +202,7 @@ header .mega-menu {
   display: flex;
   gap: 50px;
   transition: var(--transition-duration);
-  z-index: -5;
+  z-index: -10;
 }
 @media (max-width: 767px) {
   header .mega-menu {
@@ -264,10 +264,10 @@ header .mega-menu > .menu-links li a:hover::after {
 header .mega-menu > .menu-links li a i {
   margin-right: 5px;
 }
-header .container .links li:last-of-type:hover .mega-menu {
+header .container .links > li:last-of-type > a:hover .mega-menu {
   top: calc(100% + 5px);
   opacity: 1;
-  z-index: 1;
+  z-index: 10;
 }
 /* End Header */
 /* Start Landing */
@@ -842,3 +842,52 @@ header .container .links li:last-of-type:hover .mega-menu {
   color: var(--main-color);
 }
 /* End services */
+
+/* Start Skills */
+.our-skills {
+  padding: var(--section-padding) 0px;
+}
+.our-skills .container {
+  display: flex;
+}
+@media (max-width: 991px) {
+  .our-skills .container img {
+    display: none;
+  }
+}
+.our-skills .container .stats {
+  flex: 1;
+}
+.our-skills .container .stats .progres {
+  position: relative;
+}
+.our-skills .container .stats .progres > h4 {
+  display: inline-block;
+  margin: 25px 0px;
+  font-weight: bold;
+}
+.our-skills .container .stats .progres > span {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  color: var(--main-color);
+  border: 1px solid #999999;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 2.5px 5px;
+}
+.our-skills .container .stats .bar {
+  padding: 15px;
+  background-color: #eeeeee;
+  position: relative;
+}
+.our-skills .container .stats .bar span {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  background-color: var(--main-color);
+  height: 100%;
+}
+/* End Skills */
