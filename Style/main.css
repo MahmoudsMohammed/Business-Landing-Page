@@ -57,6 +57,7 @@ a {
   margin: 0px auto 100px;
   border: 2px solid black;
   position: relative;
+  text-transform: uppercase;
   z-index: 1;
 }
 .main-header:hover {
