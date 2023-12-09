@@ -638,8 +638,8 @@ header .container .links li:last-of-type:hover .mega-menu {
   border-radius: 5px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.178);
 }
-@media (max-width: 767px){
-  .testimonials .container .box{
+@media (max-width: 767px) {
+  .testimonials .container .box {
     text-align: center;
     padding-top: 80px;
   }
@@ -675,3 +675,83 @@ header .container .links li:last-of-type:hover .mega-menu {
   color: #ffc107;
 }
 /* End testimonials */
+
+/* Start Team */
+.team {
+  padding: var(--section-padding) 0px;
+}
+.team .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 100px 30px;
+}
+.team .container .box {
+  position: relative;
+}
+.team .container .box::after {
+  content: '';
+  position: absolute;
+  width: calc(100% - 60px);
+  right: 0px;
+  height: calc(100% + 60px);
+  top: -50px;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  z-index: -2;
+}
+.team .container .box::before {
+  content: '';
+  position: absolute;
+  width: 0px;
+  right: 0px;
+  height: calc(100% + 60px);
+  top: -50px;
+  border-radius: 10px;
+  background-color: #e4e4e4;
+  transition: var(--transition-duration);
+  z-index: -1;
+}
+.team .container .box:hover::before {
+  width: calc(100% - 60px);
+}
+.team .container .box .content {
+  display: flex;
+  align-items: center;
+}
+.team .container .box .content .social {
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team .container .box .content .social a {
+  width: 100%;
+  text-align: center;
+  color: var(--p-color);
+  margin-top: 25px;
+}
+.team .container .box .content .social a:hover {
+  color: var(--main-color);
+}
+.team .container .box img {
+  width: calc(100% - 60px);
+  max-width: calc(100% - 60px);
+  border-radius: 10px;
+  transition: var(--transition-duration);
+}
+.team .container .box:hover img {
+  filter: grayscale();
+}
+.team .container .box .info {
+  margin-left: 80px;
+}
+.team .container .box .info h4 {
+  margin: 20px 0px 0px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--main-color);
+}
+.team .container .box:hover .info h4 {
+  color: var(--p-color);
+}
+/* End Team */
