@@ -53,7 +53,8 @@ a {
 .main-header {
   padding: 15px;
   width: fit-content;
-  margin: 0px auto 50px;
+  font-size: 2rem;
+  margin: 0px auto 100px;
   border: 2px solid black;
   position: relative;
   z-index: 1;
@@ -618,3 +619,58 @@ header .container .links li:last-of-type:hover .mega-menu {
   color: white;
 }
 /* End features */
+
+/* Start testimonials */
+.testimonials {
+  padding: var(--section-padding) 0px;
+  background-color: var(--section-background);
+}
+.testimonials .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+.testimonials .container .box {
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.178);
+}
+@media (max-width: 767px){
+  .testimonials .container .box{
+    text-align: center;
+    padding-top: 80px;
+  }
+}
+.testimonials .container .box > img {
+  position: absolute;
+  right: -15px;
+  top: -35px;
+  width: 100px;
+  border-radius: 50%;
+  border: 10px solid var(--section-background);
+}
+@media (max-width: 767px) {
+  .testimonials .container .box > img {
+    left: 50%;
+    top: -40px;
+    transform: translateX(-50%);
+  }
+}
+.testimonials .container .box h4 {
+  margin: 0px;
+}
+.testimonials .container .box span {
+  color: var(--p-color);
+  display: block;
+  padding: 10px 0px;
+}
+.testimonials .container .box p {
+  line-height: var(--l-height);
+  color: var(--p-color);
+}
+.testimonials .container .box .rate .fil {
+  color: #ffc107;
+}
+/* End testimonials */
