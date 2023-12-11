@@ -1280,3 +1280,90 @@ header .container .links > li:last-of-type:hover .mega-menu {
   margin-top: 10px;
 }
 /* End Videos */
+
+/* Start Stats */
+#stats {
+  padding: var(--section-padding) 0px;
+  background-image: url('/Media/stats.jpg');
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+#stats::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+}
+#stats h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 80px;
+  position: relative;
+  z-index: 2;
+}
+#stats .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+  position: relative;
+  z-index: 2;
+}
+#stats .container .box {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  opacity: 0.8;
+  transition: 0.5s;
+  position: relative;
+}
+#stats .container .box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -2px;
+  height: 0;
+  width: 2px;
+  background-color: var(--main-color);
+  transition: 0.5s;
+}
+#stats .container .box::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -2px;
+  height: 0;
+  width: 2px;
+  background-color: var(--main-color);
+  transition: 0.5s;
+}
+#stats .container .box:hover::after,
+#stats .container .box:hover::before {
+  height: 100%;
+}
+#stats .container .box:hover {
+  opacity: 1;
+}
+#stats .container .box i {
+  display: block;
+  width: fit-content;
+  margin: auto;
+  font-size: 30px;
+}
+#stats .container .box span:first-of-type {
+  font-size: 3rem;
+  font-weight: bold;
+}
+#stats .container .box span:last-of-type {
+  font-size: 1.3rem;
+  color: var(--main-color);
+  font-style: italic;
+  font-weight: bold;
+}
+/* End Stats */
