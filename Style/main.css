@@ -1229,7 +1229,6 @@ header .container .links > li:last-of-type:hover .mega-menu {
 }
 .videos .container .list {
   min-width: 300px;
-  /* max-width: 100%; */
   border-right: 1px solid #e2e2e2;
 }
 .videos .container .list p {
@@ -1367,3 +1366,115 @@ header .container .links > li:last-of-type:hover .mega-menu {
   font-weight: bold;
 }
 /* End Stats */
+
+/* Start Discount */
+.discount {
+  display: flex;
+  height: 100vh;
+}
+.discount > * {
+  padding: 0px 10px;
+}
+@media (max-width: 991px) {
+  .discount {
+    flex-direction: column;
+  }
+}
+.discount .content {
+  position: relative;
+  background-image: url('/Media/discount-background1.jpg');
+  background-size: cover;
+  flex: 1;
+  animation: cahnge-image 10s linear infinite;
+}
+@keyframes cahnge-image {
+  0%,
+  100% {
+    background-image: url('/Media/discount-background1.jpg');
+  }
+  50% {
+    background-image: url('/Media/discount-background2.jpg');
+  }
+}
+.discount .content::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #1d85dbfa;
+  z-index: 0;
+}
+.discount h4 {
+  width: fit-content;
+  margin: 40px auto;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+.discount .content h4 {
+  margin-top: 100px;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+.discount .content p {
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: var(--l-height);
+  max-width: 500px;
+  margin: auto;
+}
+.discount .content img {
+  display: block;
+  width: 300px;
+  max-width: 100%;
+  margin: 20px auto 40px;
+  position: relative;
+  z-index: 1;
+}
+.discount .form {
+  flex: 1;
+}
+.discount .form form {
+  display: flex;
+  flex-direction: column;
+}
+.discount .form form * {
+  max-width: 100%;
+}
+.discount .form form *:focus {
+  outline: none;
+}
+.discount .form form input,
+.discount .form form textarea {
+  padding: 15px;
+  width: 300px;
+  margin: 0px auto 30px;
+  display: block;
+  border: none;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ccc;
+  resize: none;
+  caret-color: var(--main-color);
+}
+.discount .form form textarea {
+  height: 200px;
+}
+.discount .form form [type='submit'] {
+  background-color: var(--main-color);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: var(--transition-duration);
+  border: none;
+}
+.discount .form form [type='submit']:hover {
+  background-color: var(--alt-color);
+}
+/* End Discount */
