@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Mahmoud](https://mahmoudsmohammed.github.io/Project_one/)
+- Live Site URL: [Mahmoud](https://mahmoudsmohammed.github.io/Business_Landing_Page/)
 
 ## My process
 
@@ -41,7 +41,7 @@ Users should be able to:
 - CSS3
 - Flexbox
 - CSS Grid
-- Animation 
+- Animation
 - Transform and Transition
 - Progressive web app (PWA)
 
@@ -50,7 +50,8 @@ Users should be able to:
 - How structure the project files
 - Using Git and Github
 - Responsive Design and how to use a container
-- Use class to creak my framework and write less code 
+- Use class to creak my framework and write less code
+
 ```css
 .main-header {
   padding: 15px;
@@ -63,9 +64,10 @@ Users should be able to:
   z-index: 1;
 }
 ```
+
 - Create an animation to make the experience more beauty
 
-- Use CSS variables to avoid repeat values 
+- Use CSS variables to avoid repeat values
 
 ```css
 :root {

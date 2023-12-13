@@ -1045,6 +1045,7 @@ header .container .links > li:last-of-type:hover .mega-menu {
   padding: 25px 0px;
   font-weight: bold;
   color: var(--main-color);
+  border-radius: 5px 5px 0px 0px;
 }
 .events .container .box .dates .date span:last-of-type {
   padding: 10px 0px;
@@ -1052,6 +1053,7 @@ header .container .links > li:last-of-type:hover .mega-menu {
   font-size: 0.9rem;
   color: var(--p-color);
   transition: var(--transition-duration);
+  border-radius: 0px 0px 5px 5px;
 }
 .events .container .box .dates .date:hover,
 .events .container .box .dates .date:hover span:last-of-type {
