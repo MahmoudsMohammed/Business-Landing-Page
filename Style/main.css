@@ -51,6 +51,18 @@ a {
   }
 }
 /* Components */
+.sperator {
+  position: relative;
+}
+.sperator::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  background-image: linear-gradient(135deg, white 25%, transparent 25%),
+    linear-gradient(224deg, white 25%, transparent 25%);
+  background-size: 30px 30px;
+}
 .main-header {
   padding: 15px;
   width: fit-content;
@@ -1490,8 +1502,8 @@ header .container .links > li:last-of-type:hover .mega-menu {
   padding-top: 80px;
   padding-bottom: 80px;
 }
-@media (max-width:767px) {
-  .footer .container{
+@media (max-width: 767px) {
+  .footer .container {
     text-align: center;
   }
 }
@@ -1540,46 +1552,46 @@ header .container .links > li:last-of-type:hover .mega-menu {
 .footer .container .box:nth-of-type(2) ul li:last-of-type a {
   border-bottom: none;
 }
-.footer .container .box:nth-of-type(2) ul li a::before{
-  content: "\F101";
-  font-family: "Font Awesome 6 Free";
+.footer .container .box:nth-of-type(2) ul li a::before {
+  content: '\F101';
+  font-family: 'Font Awesome 6 Free';
   font-weight: 800;
   color: var(--main-color);
   margin-right: 10px;
 }
-.footer .container .box:nth-of-type(2) ul li a:hover{
+.footer .container .box:nth-of-type(2) ul li a:hover {
   padding-left: 10px;
   color: #ffffff;
 }
-.footer .container .box:nth-of-type(3) p{
+.footer .container .box:nth-of-type(3) p {
   color: #b9b9b9;
   margin-bottom: 30px;
   display: flex;
   align-items: center;
   line-height: var(--l-height);
 }
-@media (max-width:767px){
-  .footer .container .box:nth-of-type(3) p{
+@media (max-width: 767px) {
+  .footer .container .box:nth-of-type(3) p {
     flex-direction: column;
   }
 }
-.footer .container .box:nth-of-type(3) p i{
+.footer .container .box:nth-of-type(3) p i {
   display: block;
   margin-right: 10px;
   font-size: 1.3rem;
   color: var(--main-color);
 }
-@media (max-width:767px){
-  .footer .container .box:nth-of-type(3) p i{
+@media (max-width: 767px) {
+  .footer .container .box:nth-of-type(3) p i {
     margin-right: 0px;
     margin-bottom: 10px;
   }
 }
-.footer .container .box:nth-of-type(4) img{
+.footer .container .box:nth-of-type(4) img {
   width: 80px;
   border: 2px solid #ffffff;
 }
-.footer footer{
+.footer footer {
   padding: 20px 0px;
   color: #ffffff;
   text-align: center;
