@@ -51,6 +51,22 @@ a {
   }
 }
 /* Components */
+.dots-par {
+  position: relative;
+}
+.dots {
+  position: absolute;
+  width: 204px;
+  height: 186px;
+}
+.dots:first-of-type {
+  right: 0px;
+  top: 200px;
+}
+.dots:last-of-type {
+  left: 0px;
+  bottom: 200px;
+}
 .sperator {
   position: relative;
 }
