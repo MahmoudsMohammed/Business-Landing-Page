@@ -21,7 +21,7 @@ Users should be able to:
 
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
-- The user enjoys animation which makes the User Experience more enjoyable
+- Enjoy animation which makes the User Experience more enjoyable
 
 ### Screenshot
 
@@ -38,37 +38,44 @@ Users should be able to:
 ### Built with
 
 - HTML5
-- CSS custom properties
+- CSS3
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
+- Animation 
+- Transform and Transition
+- Progressive web app (PWA)
 
 ### What I learned
 
 - How structure the project files
 - Using Git and Github
 - Responsive Design and how to use a container
-- Use class to creak my own framework
-
+- Use class to creak my framework and write less code 
 ```css
-.cont {
+.main-header {
+  padding: 15px;
   width: fit-content;
-  margin: auto;
-  text-align: center;
+  font-size: 2rem;
+  margin: 0px auto 100px;
+  border: 2px solid black;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 1;
 }
 ```
+- Create an animation to make the experience more beauty
 
-- Use CSS variables
+- Use CSS variables to avoid repeat values 
 
 ```css
 :root {
-  --main-color: #10cab7;
-  --secondary-color: #2c4755;
-  --section-padding: 60px;
-  --section-background: #f6f6f6;
-  --main-duration: 0.5s;
-  --line-height: 1.6;
-  --p-color: #727272;
+  --main-color: #2196f3;
+  --alt-color: #168be5;
+  --section-background: #ececec;
+  --section-padding: 100px;
+  --transition-duration: 0.3s;
+  --l-height: 1.6;
+  --p-color: #777;
 }
 ```
 
