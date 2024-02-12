@@ -1,6 +1,6 @@
 # Mahmoud Landing Page
 
-Landing page using HTML, CSS, and PWA. I designed this landing page as a landing page for a business.
+Landing page using HTML and CSS. I designed this landing page as a landing page for a business.
 
 ## Table of contents
 
