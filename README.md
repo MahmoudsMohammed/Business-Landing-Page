@@ -43,7 +43,7 @@ Users should be able to:
 - CSS Grid
 - Animation
 - Transform and Transition
-- Progressive web app (PWA)
+
 
 ### What I learned
 
