@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Mahmoud](https://mahmoudsmohammed.github.io/Business_Landing_Page/)
+- Live Site URL: [Mahmoud](https://mahmoudsmohammed.github.io/Business-Landing-Page/)
 
 ## My process
 
